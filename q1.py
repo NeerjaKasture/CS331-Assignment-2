@@ -271,7 +271,7 @@ def d(congestion_schemes, net):
     c(congestion_schemes, net)
     net.stop()
     
-    net = Mininet(topo=MyTopo(loss=5), controller=Controller, link=TCLink, host=CPULimitedHost,loss=5)
+    net = Mininet(topo=MyTopo(loss=5), controller=Controller, link=TCLink, host=CPULimitedHost)
     net.start()
 
     print("S2-S3 loss is 5%")
